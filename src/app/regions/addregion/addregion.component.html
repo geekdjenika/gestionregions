@@ -1,0 +1,31 @@
+<p>addregion works!</p>
+<div [hidden]="ajoute" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="coderegion">Code région</label>
+      <input type="text" class="form-control" id="coderegion" required [(ngModel)]="region.coderegion" name="coderegion">
+    </div>
+
+    <div class="form-group">
+      <label for="domaineactivite">Domaine d'activité</label>
+      <input type="text" class="form-control" id="domaineactivite" required [(ngModel)]="region.domaine_actvite" name="domaineactivite">
+    </div>
+
+    <div class="form-group">
+      <label for="langue">Langue</label>
+      <input type="text" class="form-control" id="langue" required [(ngModel)]="region.langue" name="langue">
+    </div>
+    <div class="form-group">
+      <label for="nom">Nom</label>
+      <input type="text" class="form-control" id="nom" required [(ngModel)]="region.nom" name="nom">
+    </div>
+
+    <div class="form-group">
+      <label for="superficie">Superficie</label>
+      <input type="text" class="form-control" id="superficie" required [(ngModel)]="region.superficie" name="superficie">
+    </div>
+
+    <button class="btn btn-success">Ajouter</button>
+  </form>
+</div>
+
